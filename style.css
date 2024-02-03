@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+   
+  }
+  h1{
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+
+  }
+  
+  button {
+    padding: 13px 90px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-left: 10px;
+    border: 1px solid #000;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+  }
+  button:hover{
+    color: white;
+    background-color: #000;
+  }
+ .product-container.active{
+    background-color: #000000;
+    color: black;
+ }  
+
+  .product-container{
+    margin-top: 1rem;
+    margin-left: 15rem;
+  }
+
+
+  .product-card {
+    
+    padding: 10px;
+    margin: 10px;
+    width: 230px;
+    border-radius: 6px;
+    height: 500px;
+    
+  }
+  
+  img {
+    width: 100%;    
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
+  button.add-to-cart-btn {
+    background-color: #000000;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-left: 0;
+    border-radius: 5px;
+  }
+.title{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    p{
+        margin-left:1rem;
+        font-size: 1rem;
+    }
+    h3{
+      font-size: 1.3rem;
+    }
+}
+  
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -1rem;
+    position: relative;
+}
+.compare{
+    font-size: 0.9rem;
+    padding-top: 0.2rem;
+    color: rgba(128, 128, 128, 0.622);
+}
+.fiftyoff{
+    color: red;
+}
+.line{
+  position: absolute;
+    height: 2.5px;
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.542);
+    width: 60px;
+    top: 17%;
+    left: 38%;
+
+}
+.newseason{
+    position: absolute;
+    background-color: #ffffff;
+    padding: 5px 5px;
+    margin: 2px 2px;
+    border-radius: 5px;
+
+}
+
+  @media screen and (max-width: 768px) {
+    .product-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 10.5rem;
+      padding: 30px 30px;
+    }
+    button{
+        padding: 10px 50px;
+    }
+}
+  
+   @media screen and (max-width: 1025px) {
+    .product-container {
+      justify-content: flex-start; 
+      margin-left: 15rem;
+    }
+}
+
+
+  
