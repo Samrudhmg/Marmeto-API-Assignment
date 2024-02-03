@@ -1,5 +1,5 @@
 
-# Marmeto API Integration Asssignment with uI Design
+# Marmeto API Integration Asssignment
 
 This project involved integration of an API and displaying the products based on the given categories, this has been achieved to it's truest fidelity as the tasks were all sucessfully completed as asked.
 
